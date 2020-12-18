@@ -1,4 +1,4 @@
-class Calculator:
+class Maxvalue:
 
   def max_in_list(lst):
       assert lst
