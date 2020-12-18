@@ -1,13 +1,11 @@
 import unittest
-from Calculator import exam
+from Maxvalue import exam
 
-class TestCalculator(unittest.TestCase):
-  def __init__(self):
-    self.calculator = Calculator()
+class TestProgression(unittest.TestCase):
+  test= [2,3,6,4,3]
     
-  def n_chlen(self):
-    self.assertEqual(self.calculator.add(3), 9)
-    self.assertEqual(self.calculator.add(4), 11)
+  def max_in_list_test(lst):
+    self.assertEqual(lst.max_in_list(test), 6)
 
 if __name__ == "__main__":
   unittest.main()
