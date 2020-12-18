@@ -1,7 +1,8 @@
 class Calculator:
 
-  def __init__(self):
-    pass
-
-  def n_chlen(self, n):
-    return 3+2*n
+  def newMax(lst):
+      max = lst[0]
+      for k in range(1, len(lst)):
+          if lst[k] > max:
+              max = lst[k]
+      return max
