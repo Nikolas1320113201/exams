@@ -1,8 +1,12 @@
 class Calculator:
 
-  def newMax(lst):
-      max = lst[0]
-      for k in range(1, len(lst)):
-          if lst[k] > max:
-              max = lst[k]
-      return max
+  def max_in_list(lst):
+      assert lst
+      m = lst[0]
+      for i in lst:
+          if i > m:
+              m = i
+      return m
+ 
+  max_in_list([1, 5, 3, 12, 4, 8])
+
